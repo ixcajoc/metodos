@@ -1,0 +1,86 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body{
+	margin: 0;
+	font-family: sans-serif,serif;
+}
+img{
+	border-radius: 100%;
+	height: 30%;	
+}
+h1{
+	color: white;
+	/*el texto siempre se mantiene,pero se reduce o amplia
+	segun el tamanio de la pantalla*/
+/*	font-size: 3vw;*/
+	font-size: 3rem;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	background-color: #620CF8;
+	border-radius: 20px;
+}
+a:hover{
+	background-color: #2E037A;
+}
+.contenedor-logo{
+	text-align: center;
+}
+main{
+	background-image: linear-gradient(
+	0deg,
+	rgba(0, 0, 0, 0.80),
+	rgba(0, 0, 0, 0.80)
+	)
+	,url(fondo.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.parrafo-conocer-mas{
+	margin-bottom: 3rem;
+}
+section{
+	padding: 4rem 0;
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+}
+footer{
+	padding: 3rem 0;
+	background-color: #242525;
+	color: white;
+	text-align: center;
+}
+footer p{
+	font-size: 1rem;
+}
+
+@media(max-width: 700px){
+	.botones{
+		display: flex;
+		flex-direction: column;
+	}
+	.img-matriz{
+		width: 80%;
+	}
+	h1{
+		font-size: 2rem;
+	}
+	html{
+		width: 100%;
+	}
+	footer p{
+		font-size: 12px;
+	}
+}
